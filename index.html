@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Birth Your Book Challenge | A 5-Day Challenge with Tracie Bonds</title>
+<meta name="description" content="A 5-day Spirit-led book writing challenge with Tracie Bonds. May 11 to 15, 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4E;
+    --navy-deep: #0F1B36;
+    --fuchsia: #C2185B;
+    --seaglass: #9CC4B2;
+    --seaglass-soft: #C4DDD2;
+    --cream: #FAF6EE;
+    --ink: #2A2A2A;
+    --paper: #FFFEFB;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Jost', sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.7;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  .narrow { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
+  .label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* HERO */
+  .hero { position: relative; padding: 5rem 0 4rem; background: var(--cream); overflow: hidden; }
+  .hero-inner { position: relative; z-index: 2; text-align: center; }
+  .hero-eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--navy);
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 9vw, 7rem); color: var(--navy); margin-bottom: 0.5rem; line-height: 1.05; font-weight: 500; }
+  .hero-title em { font-style: italic; color: var(--fuchsia); font-weight: 400; }
+  .hero-subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.25rem, 2.5vw, 1.6rem); color: var(--navy); margin-bottom: 2.25rem; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.4; opacity: 0.85; }
+  .hero-cta { margin-bottom: 2rem; }
+  .hero-meta { display: flex; justify-content: center; flex-wrap: wrap; color: var(--navy); }
+  .hero-meta-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .hero-times {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--navy);
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    opacity: 0.8;
+    letter-spacing: 0.02em;
+  }
+  .hero-meta-item .dot { width: 6px; height: 6px; background: var(--fuchsia); border-radius: 50%; }
+
+  .btn-primary { display: inline-block; background: var(--fuchsia); color: white; padding: 1.1rem 2.8rem; text-decoration: none; font-family: 'Jost', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; transition: all 0.3s ease; border: 2px solid var(--fuchsia); }
+  .btn-primary:hover { background: var(--navy); border-color: var(--navy); transform: translateY(-2px); }
+
+  /* SCRIPTURE BAND */
+  .scripture-band { background: var(--navy); color: white; padding: 4rem 2rem; text-align: center; }
+  .scripture-band p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.4rem, 2.5vw, 1.8rem); line-height: 1.5; max-width: 800px; margin: 0 auto 1rem; font-weight: 400; }
+  .scripture-band .ref { color: var(--seaglass); letter-spacing: 0.2em; font-size: 0.85rem; text-transform: uppercase; }
+
+  /* SECTIONS */
+  .section { padding: 5rem 0; }
+  .section-eyebrow { color: var(--fuchsia); text-align: center; margin-bottom: 1rem; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 3rem); color: var(--navy); text-align: center; margin-bottom: 3rem; line-height: 1.15; font-weight: 500; }
+
+  /* THE QUESTIONS */
+  .questions { background: var(--paper); padding: 5rem 0; }
+  .questions-list { max-width: 760px; margin: 0 auto; }
+  .question-item {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+    color: var(--navy);
+    line-height: 1.45;
+    padding: 2.4rem 0;
+  }
+
+  .questions-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .questions-outro {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--fuchsia);
+    line-height: 1.5;
+  }
+
+  /* TESTIMONY / WHY */
+  .why { background: var(--cream); padding: 5rem 0; }
+  .why-text p { font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--ink); line-height: 1.75; }
+  .why-text p.lead { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.5rem; color: var(--navy); line-height: 1.4; text-align: center; margin-bottom: 2rem; }
+  .why-text p.lead-bold {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .why-text p.pull { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; color: var(--fuchsia); border-left: 3px solid var(--seaglass); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.5; }
+  .why-text .section-eyebrow { margin-bottom: 2.5rem; }
+
+  /* DETAILS BAR */
+  .details-bar { background: var(--seaglass); padding: 2rem; text-align: center; color: var(--navy); }
+  .details-bar-inner { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .details-item { display: flex; flex-direction: column; text-align: center; }
+  .details-item-label { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 500; }
+  .details-item-value { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; }
+
+  /* OFFER */
+  .offer { background: var(--paper); padding: 5rem 0; }
+  .offer-intro { max-width: 720px; margin: 0 auto 3rem; text-align: center; }
+  .offer-intro p { font-size: 1.15rem; line-height: 1.7; color: var(--ink); margin-bottom: 1.5rem; }
+
+  .pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 3rem auto 0; }
+  @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
+  .pricing-card { background: var(--cream); padding: 3rem 2.5rem; border-top: 4px solid var(--seaglass); display: flex; flex-direction: column; }
+  .pricing-card.vip { border-top-color: var(--fuchsia); }
+  .pricing-card .tier-name { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 0.5rem; font-weight: 500; }
+  .pricing-card .tier-price { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--fuchsia); margin-bottom: 1.5rem; font-weight: 500; }
+  .pricing-card .tier-desc { color: var(--ink); margin-bottom: 2rem; flex-grow: 1; font-size: 1rem; line-height: 1.6; }
+  .pricing-card .btn-primary { width: 100%; text-align: center; }
+
+  /* COHORT MENTION */
+  .cohort-mention {
+    max-width: 720px;
+    margin: 3rem auto 0;
+    padding: 2.5rem;
+    background: var(--cream);
+    border-left: 3px solid var(--fuchsia);
+  }
+  .cohort-mention .cohort-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    color: var(--navy);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+  .cohort-mention p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 1rem; }
+  .cohort-mention p:last-child { margin-bottom: 0; }
+  .cohort-mention .cohort-link {
+    color: var(--fuchsia);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--fuchsia);
+    transition: opacity 0.3s ease;
+  }
+  .cohort-mention .cohort-link:hover { opacity: 0.7; }
+  .cohort-mention .cohort-pull {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--fuchsia);
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+
+  /* FINAL CTA */
+  .final-cta { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); color: var(--cream); padding: 5rem 0; text-align: center; position: relative; overflow: hidden; }
+  .final-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 30%, rgba(194,24,91,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(156,196,178,0.1) 0%, transparent 50%); pointer-events: none; }
+  .final-cta-inner { position: relative; z-index: 2; }
+  .final-cta h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: 1.5rem; line-height: 1.1; font-weight: 500; }
+  .final-cta h2 em { font-style: italic; color: var(--seaglass); }
+  .final-cta p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.3rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; color: rgba(250,246,238,0.9); }
+  .final-cta .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  footer { background: var(--navy-deep); color: rgba(250,246,238,0.7); padding: 3rem 0 2rem; text-align: center; font-size: 0.9rem; }
+  footer p { margin-bottom: 0.5rem; }
+  footer .brand { font-family: 'Cormorant Garamond', serif; color: var(--cream); font-size: 1.1rem; font-style: italic; margin-bottom: 1rem; }
+  footer .signature { font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--seaglass); margin-bottom: 1rem; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-eyebrow { animation: fadeUp 0.7s ease-out 0.1s both; }
+  .hero-title { animation: fadeUp 0.7s ease-out 0.25s both; }
+  .hero-subtitle { animation: fadeUp 0.7s ease-out 0.4s both; }
+  .hero-meta { animation: fadeUp 0.7s ease-out 0.55s both; }
+  .hero-cta { animation: fadeUp 0.7s ease-out 0.7s both; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner container">
+    <h1 class="hero-title">Birth Your Book</h1>
+    <div class="hero-eyebrow">A 5-Day Book Writing Challenge with Author, Tracie Bonds</div>
+    <p class="hero-subtitle">Bringing to life what God has put inside of you.</p>
+    <div class="hero-cta">
+      <a href="#offer" class="btn-primary">Save My Spot</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span>Monday-Friday May 11th-15th &middot; Live on Zoom</span>
+      </div>
+    </div>
+    <div class="hero-times">
+      <span>VIP Coaching 11 AM CST &middot; General Admission 12 PM Noon CST</span>
+    </div>
+  </div>
+</section>
+
+<!-- THE SIX QUESTIONS (VAULT OPENER) -->
+<section class="questions">
+  <div class="container">
+    <div class="section-eyebrow label">Ask Yourself</div>
+
+    <div class="questions-list">
+      <div class="question-item">Have I wanted to write a book but just did not know where to start?</div>
+      <div class="question-item">Have I started writing and stopped, more times than I can count?</div>
+      <div class="question-item">Do I have a story or a testimony I cannot figure out how to tell?</div>
+      <div class="question-item">Have I been trying to do this alone and longing for a tribe walking with me?</div>
+      <div class="question-item">Do I want a system rooted in the gospel that helps me hear God and write what He leads me to write?</div>
+    </div>
+  </div>
+</section>
+
+<!-- A NOTE FROM AUTHOR, TRACIE BONDS -->
+<section class="why">
+  <div class="narrow why-text">
+    <div class="section-eyebrow label">A Note from the Author</div>
+    <h2 class="section-title">Tracie Bonds</h2>
+
+    <p class="lead-bold">If you answered yes to any of those questions, me too. For me, it was all of them.</p>
+
+    <p>After belaboring for the last year writing my first book, I learned so very much that I feel compelled to help others write their God stories too.</p>
+
+    <p>Through my trial, error, and learning season, God birthed a Spirit-led book writing method that I call The God Story Method.</p>
+
+    <p>Every Christian has a God Story to share, testimonies that will bring God glory and help others through their trials. Most just do not know where to start or how to go through the process. And finding people who do it God's way is a whole other layer.</p>
+
+    <p>Most believe you need a big publisher or $20K or more to pay a company to help you write your book. I know, because I did that.</p>
+
+    <p>In 2016 I paid a well-known company $20,000 to help me write my first book. I met with their "scribes" who would listen to and record my stories and then write them out and send them back to me for approval. The problem was, they never sounded like me. They could never figure out my unique voice.</p>
+
+    <p>After going through multiple scribes, the owner of the company said, "Tracie, come to Austin to my next writer's workshop. I feel you need to write your own book." I did as he suggested and met one of my dearest "published author friends." But still, I did not write my first book.</p>
+
+    <p>Over the years I attended writer's retreats and online seminars on writing your first or next book. But still no book.</p>
+
+    <p class="pull">Until I received a word from The Lord.</p>
+
+    <p>He spoke. I listened.</p>
+
+    <p>I then submitted to His Lordship. I surrendered my way of thinking it should or had to be done the way all the other people on social media were doing it.</p>
+
+    <p>I asked God to use me to write the words He wanted written. I prayed for discernment to know what to put in the book and what to leave out.</p>
+
+    <p>I woke daily with great expectation of what God was going to download to me. I made the decision to open my heart and my mind to receive all He had for me and for those who He will cause to read my book.</p>
+
+    <p>I rested. I trusted Him in the process. I obeyed. I moved forward in peace and strength from Him.</p>
+
+    <p class="pull">God birthed my first book through me. Five more are coming. He can birth yours through you too.</p>
+  </div>
+</section>
+
+<!-- DETAILS BAR -->
+<div class="details-bar">
+  <div class="details-bar-inner">
+    <div class="details-item"><span class="details-item-label">When</span><span class="details-item-value">May 11 to 15, 2026</span></div>
+    <div class="details-item"><span class="details-item-label">GA Training</span><span class="details-item-value">12:00 noon CST</span></div>
+    <div class="details-item"><span class="details-item-label">VIP Coaching</span><span class="details-item-value">11:00 AM CST</span></div>
+    <div class="details-item"><span class="details-item-label">Where</span><span class="details-item-value">Zoom + Facebook</span></div>
+    <div class="details-item"><span class="details-item-label">Replays</span><span class="details-item-value">Included</span></div>
+  </div>
+</div>
+
+<!-- THE OFFER -->
+<section class="offer" id="offer">
+  <div class="container">
+    <div class="section-eyebrow label">The Offer</div>
+    <h2 class="section-title">Two ways to walk this with me.</h2>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="tier-name">General Admission</div>
+        <div class="tier-price">$97</div>
+        <div class="tier-desc">5 days of live training on Zoom at 12:00 noon CST. Daily access to the framework, scripture, and prompts. All calls recorded and available for playback for those who cannot attend live. Includes the private Facebook community.</div>
+        <a href="https://buy.stripe.com/9B64gz6SeckA7vzagP5EY02" class="btn-primary">Join General Admission</a>
+      </div>
+      <div class="pricing-card vip">
+        <div class="tier-name">VIP</div>
+        <div class="tier-price">$297</div>
+        <div class="tier-desc">Everything in General Admission, plus 50 minutes of group coaching with Tracie at 11:00 AM CST before each daily training. All calls recorded and available for playback. Bring your questions to the room.</div>
+        <a href="https://buy.stripe.com/fZu14nb8u1FW4jn74D5EY03" class="btn-primary">Join VIP</a>
+      </div>
+    </div>
+
+    <div class="cohort-mention">
+      <h3 class="cohort-heading">About the GOD STORY Cohort</h3>
+      <p>The GOD STORY Cohort is a 9-week Spirit-led book writing experience. June 1 to end of July. Weekly group teaching on Zoom, daily prompts, and a private community of believers walking the same path as you write the book God has commissioned you to write.</p>
+      <p class="cohort-pull">Let's get committed on birthing the book God wants to give the world through you.</p>
+      <p>To learn more, visit <a href="https://godstorycoaching.com" class="cohort-link">godstorycoaching.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="brand">GOD STORY Coaching</div>
+    <p>Hosted by Tracie Bonds &middot; 12 Stones Press</p>
+    <p class="signature">With LOVE &amp; GREAT EXPECTATION, Tracie</p>
+    <p>&copy; 2026. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
